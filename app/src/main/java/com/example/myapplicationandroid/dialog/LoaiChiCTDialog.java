@@ -19,7 +19,7 @@ public class LoaiChiCTDialog {
     private AlertDialog mDialog;
 
     private TextView tvid,tvName;
-    //private boolean mEditMode; //có đang ở trạng thái edit hay ko
+
 
     public LoaiChiCTDialog(Context context, FragmentLoaiChi fragment, LoaiChi loaiChi) {
         mViewModel = fragment.getViewModel();

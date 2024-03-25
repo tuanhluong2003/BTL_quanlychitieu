@@ -23,7 +23,6 @@ public class FragmentThu extends Fragment {
     private TabLayout mTl;
 
     public FragmentThu() {
-        // Required empty public constructor
     }
 
 
@@ -55,13 +54,11 @@ public class FragmentThu extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_thu, container, false);
     }
 }

@@ -20,10 +20,10 @@ public class ThuVP2Adapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         Fragment fragment;
         if(position ==0){
-            fragment = FragmentKhoanThu.newInstance();
+            fragment = new FragmentKhoanThu();
         }
         else {
-            fragment = FragmentLoaiThu.newInstance();
+            fragment = new FragmentLoaiThu();
         }
         return fragment;
     }

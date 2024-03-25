@@ -10,7 +10,6 @@ public class Chi {
     public int idchi;
     @ColumnInfo(name = "idloaichi")
     public int idloaichi;
-
     @ColumnInfo(name = "ten")
     public String ten;
     @ColumnInfo(name = "sotien")

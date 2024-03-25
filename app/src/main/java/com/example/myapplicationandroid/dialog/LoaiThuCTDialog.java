@@ -21,7 +21,7 @@ public class LoaiThuCTDialog {
     private AlertDialog mDialog;
 
     private TextView tvid,tvName;
-    //private boolean mEditMode; //có đang ở trạng thái edit hay ko
+    private boolean mEditMode; //có đang ở trạng thái edit hay ko
 
     public LoaiThuCTDialog(Context context, FragmentLoaiThu fragment, LoaiThu loaiThu) {
         mViewModel = fragment.getViewModel();
@@ -32,7 +32,6 @@ public class LoaiThuCTDialog {
         tvid.setText(""+loaiThu.idloaithu);
         tvName.setText(loaiThu.ten);
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(context)
                 .setView(view)
                 .setNegativeButton("Đóng", new DialogInterface.OnClickListener() {
@@ -41,7 +40,6 @@ public class LoaiThuCTDialog {
                         mDialog.dismiss();
                     }
                 });
-
         mDialog=builder.create();
     }
     public void show() {

@@ -50,19 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-    MainActivity mViewModel;
-    private TabLayout tb;
-    private ThuDao viewModel;
 
-
-    @Override
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setSupportActionBar(binding.appBarMain.toolbar);
-        final MainActivity currentContext = this;
+        setSupportActionBar(binding.appBarMain.toolbar); // thiet lap toolbar
+        final MainActivity currentContext = this; //context la thang hien tai
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,12 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 if(fragment instanceof FragmentLoaiThu){
                     LoaiThuDialog dialog = new LoaiThuDialog(currentContext,
                             (FragmentLoaiThu) fragment);
-                    
                     dialog.show();
                 } else if (fragment instanceof FragmentKhoanThu) {
                     ThuDialog dialog = new ThuDialog(currentContext,(FragmentKhoanThu) fragment );
                     dialog.show();
-                    
                 }
                 List<Fragment> fragment1s=getSupportFragmentManager().getFragments();
                 Fragment fragment1 = fragment1s.get(fragment1s.size()-1);
@@ -87,12 +80,8 @@ public class MainActivity extends AppCompatActivity {
                 } else if (fragment instanceof FragmentKhoanChi) {
                     ChiDialog dialog = new ChiDialog(currentContext,(FragmentKhoanChi) fragment1 );
                     dialog.show();
-
-
                 }
             }
-
-
         });
         DrawerLayout drawer = binding.drawerLayout;
 
@@ -144,12 +133,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-    public MainActivity getViewModel() {
-        return mViewModel;
-    }
-
 
 
     @Override

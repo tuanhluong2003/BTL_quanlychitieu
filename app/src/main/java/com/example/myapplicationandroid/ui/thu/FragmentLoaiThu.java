@@ -32,10 +32,6 @@ public class FragmentLoaiThu extends Fragment {
 
     private FragmentLoaiThuViewModel mViewModel;
 
-    public static FragmentLoaiThu newInstance() {
-        return new FragmentLoaiThu();
-    }
-
     public FragmentLoaiThuViewModel getViewModel() {
         return mViewModel;
     }

@@ -35,10 +35,6 @@ public class FragmentKhoanThu extends Fragment {
     private RecyclerView mRv;
     private ThuRAdapter mAdapter;
 
-    public static FragmentKhoanThu newInstance() {
-        return new FragmentKhoanThu();
-    }
-
     public FragmentKhoanThuViewModel getViewModel() {
         return mViewModel;
     }
@@ -50,7 +46,6 @@ public class FragmentKhoanThu extends Fragment {
         mAdapter = new ThuRAdapter(getActivity());
         mRv.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRv.setAdapter(mAdapter);
-
         final FragmentKhoanThu currentFragment = this;
         mAdapter.setOnItemEditClickListener(new ItemClickListener() {
             @Override

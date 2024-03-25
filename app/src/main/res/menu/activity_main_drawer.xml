@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
@@ -26,7 +25,6 @@
         <menu>
             <item android:title="Giới thiệu" android:id="@+id/nav_gioithieu" android:icon="@drawable/baseline_account_balance_24"/>
             <item android:title="Thoaát" android:id="@+id/nav_thoat" android:icon="@drawable/baseline_exit_to_app_24"/>
-
         </menu>
     </item>
 </menu>

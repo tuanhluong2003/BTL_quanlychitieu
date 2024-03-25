@@ -10,7 +10,6 @@ public class Thu {
     public int idthu;
     @ColumnInfo(name = "idloaithu")
     public int idloaithu;
-
     @ColumnInfo(name = "ten")
     public String ten;
     @ColumnInfo(name = "sotien")

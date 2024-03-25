@@ -48,8 +48,6 @@ public class ChiDialog {
             }
         });
 
-
-
         spType.setAdapter(mAdapter);
         if(chi != null && chi.length>0){
             etid.setText(""+chi[0].idchi);

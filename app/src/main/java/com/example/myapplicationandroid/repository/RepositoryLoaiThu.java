@@ -27,7 +27,6 @@ public class RepositoryLoaiThu {
 
     public void insert(LoaiThu loaiThu){
         new InsertAsyncTask(mloaiThuDao).execute(loaiThu);
-
     }
     public void delete(LoaiThu loaiThu){
         new DeleteAsyncTask(mloaiThuDao).execute(loaiThu);

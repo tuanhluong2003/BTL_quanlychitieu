@@ -26,8 +26,6 @@ public class FragmentChi extends Fragment {
         // Required empty public constructor
     }
 
-
-    // TODO: Rename and change types and number of parameters
     public static FragmentChi newInstance(String param1, String param2) {
         FragmentChi fragment = new FragmentChi();
         return fragment;
@@ -38,6 +36,7 @@ public class FragmentChi extends Fragment {
         mTl = view.findViewById(R.id.tabLayout);
         ChiVP2Adapter adapter = new ChiVP2Adapter(getActivity());
         mVp.setAdapter(adapter);
+
         new TabLayoutMediator(mTl, mVp, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
